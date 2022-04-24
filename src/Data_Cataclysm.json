@@ -27,4 +27,5 @@
 {"id":27,"class":"Brujo","short_name":"Brujo","rol":"dps","expansion":"4.3.4","video":"#"},
 {"id":28,"class":"Guerrero","short_name":"Guerrero","rol":"tank","expansion":"4.3.4","video":"#"},
 {"id":29,"class":"Guerrero","short_name":"Guerrero","rol":"dps","expansion":"4.3.4","video":"#"},
-{"id":30,"class":"Guerrero","short_name":"Guerrero","rol":"dps","expansion":"4.3.4","video":"#"}]
+{"id":30,"class":"Guerrero","short_name":"Guerrero","rol":"dps","expansion":"4.3.4","video":"#"},
+{"id":31,"class":"Guerrero test","short_name":"Guerrero test","rol":"dps a","expansion":"4.3.4","video":"#"}]

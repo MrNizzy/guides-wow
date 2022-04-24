@@ -14,6 +14,8 @@ import IconRogue from "../resources/icons/class/class-rogue.png";
 import IconShaman from "../resources/icons/class/class-shaman.png";
 import IconWarlock from "../resources/icons/class/class-warlock.png";
 import IconWarrior from "../resources/icons/class/class-warrior.png";
+import IconNull from "../resources/icons/class/null-icon.jpg";
+import IconCross from "../resources/icons/class/icon-equis.png";
 
 const GuideBox = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -134,7 +136,12 @@ const GuideBox = () => {
                     </h5>
                   </a>
                 ) : (
-                  "No hay clase asignada"
+                  <a href={value.video}>
+                    <img src={IconNull} alt="Icon null" className="img-class" />
+                    <h5 className="text-center w-400 color--no-focus">
+                      {value.class}
+                    </h5>
+                  </a>
                 )}
                 {value.rol === "dps" ? (
                   <img src={IconDps} alt="DPS" className="class-type" />
@@ -143,7 +150,7 @@ const GuideBox = () => {
                 ) : value.rol === "tank" ? (
                   <img src={IconTank} alt="Tank" className="class-type" />
                 ) : (
-                  "No hay clase asignada"
+                  <img src={IconCross} alt="Icon cross" className="class-type-null" />
                 )}
               </li>
             );
