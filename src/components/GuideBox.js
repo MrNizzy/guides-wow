@@ -38,6 +38,7 @@ const GuideBox = () => {
       <IconClass />
       <div className="class-grid">
         <ul className="class-grid-list">
+          /* Filtering the data and mapping it to the DOM. */
           {Data.filter((value) => {
             if (searchTerm === "") {
               return value;
@@ -143,6 +144,7 @@ const GuideBox = () => {
                     </h5>
                   </a>
                 )}
+                /* A ternary operator. It is a shorthand way of writing an if/else statement. */
                 {value.rol === "dps" ? (
                   <img src={IconDps} alt="DPS" className="class-type" />
                 ) : value.rol === "heal" ? (
